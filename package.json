@@ -1,0 +1,72 @@
+{
+  "name": "typescript-node-lib",
+  "version": "0.0.0",
+  "licence": "MIT",
+  "author": {
+    "name": "name",
+    "email": "email@domain.com"
+  },
+  "main": "dist/index.js",
+  "description": "your typescript library description",
+  "keywords": [
+    "typescript"
+  ],
+  "scripts": {
+    "benchmarks": "ts-node benchmarks",
+    "changelog": "standard-changelog",
+    "clean": "rimraf dist",
+    "docs": "npm run clean && typedoc --options typedoc.markdown.json",
+    "lint": "eslint -c ./.eslintrc.json src/**/*.ts --fix",
+    "prepublishOnly": "npm run clean && tsc -p tsconfig.npm.json",
+    "size-limit": "npm run clean && tsc -p . && size-limit",
+    "test": "jest",
+    "upgrade-interactive": "npm-check --update"
+  },
+  "homepage": "https://github.com/yourname/yourrepo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourname/yourrepo.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "size-limit": [
+    {
+      "limit": "1 s",
+      "webpack": false,
+      "path": "dist/*.js"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.4.5",
+    "@size-limit/time": "^4.4.5",
+    "@types/benchmark": "^1.0.31",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.4",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "benchmark": "^2.1.4",
+    "codecov": "^3.6.5",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5",
+    "jest": "^25.4.0",
+    "lint-staged": "^10.1.7",
+    "npm-check": "^5.9.2",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "standard-changelog": "^2.0.21",
+    "ts-jest": "^25.4.0",
+    "ts-node": "^8.9.1",
+    "typedoc": "^0.17.6",
+    "typedoc-plugin-markdown": "^2.2.17",
+    "typescript": "^3.8.3"
+  }
+}
