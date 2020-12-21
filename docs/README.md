@@ -1,27 +1,7 @@
-Arweave Mnemonic Keys
-===========================
 
-This library allows Arweave wallets/keys to be generated/loaded from BIP39-compliant 12 word mnemonics.  This is as an alternative to the current default Arweave dapp behavior of requiring a JSON keyfile to be provided to sign transactions and interact with Arweave dapps.
+# arweave-mnemonic-keys
 
-See [ArMob 2.0](https://acolytec3.github.io/armob-2.0) for an example use case
-
-This package is also served through OpenBits (http://openbits.world)
-
-# 🎉 Features
-
-- Generate BIP39 compliant 12 word mnemonics
-- Generate Arweave compliant wallets from 12 word mnemonics
-# ⚙ Install
-
-```bash
-# npm
-npm install arweave-mnemonic-keys
-
-# openbits
-openbits install arweave-mnemonic-keys
-```
-
-# 📖 Usage
+## Index
 
 ### Functions
 
@@ -66,4 +46,3 @@ Name | Type | Description |
 **Returns:** *Promise‹any›*
 
 - returns a Javascript object that conforms to the JWKInterface required by Arweave-js
-

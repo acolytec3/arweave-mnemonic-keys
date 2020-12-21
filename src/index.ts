@@ -1,5 +1,1 @@
-export function mylib(): void {}
-
-export default {
-  mylib
-};
+export * from './arweaveMnemonicKeys';
