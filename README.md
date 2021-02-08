@@ -7,6 +7,8 @@ See [ArMob 2.0](https://acolytec3.github.io/armob-2.0) for an example use case
 
 This package is also served through OpenBits (http://openbits.world)
 
+Note: It takes anywhere from 30 seconds to 2 minutes to generate an RSA key using this library cuz well...Javascript can be slow.
+
 # 🎉 Features
 
 - Generate BIP39 compliant 12 word mnemonics
