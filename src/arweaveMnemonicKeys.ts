@@ -6,13 +6,13 @@ import crypto from "libp2p-crypto";
  * @returns {string} - a promise resolving to a 12 word mnemonic seed phrase
  */
 export async function generateMnemonic() {
-  return (
-    await generateKeyPair(
-      "rsa",
-      { id: "rsa", modulusLength: 4096 },
-      { privateKeyFormat: "pkcs1-pem" }
-    )
-  ).mnemonic;
+  let keys = await generateKeyPair(
+    "rsa",
+    { id: "rsa", modulusLength: 4096 },
+    { privateKeyFormat: "pkcs1-pem" }
+  );
+  console.log(keys);
+  return keys.mnemonic;
 }
 
 /**
@@ -34,7 +34,8 @@ export async function getKeyFromMnemonic(mnemonic: string) {
     { id: "rsa", modulusLength: 4096 },
     { privateKeyFormat: "pkcs1-pem" }
   );
-    //@ts-ignore
+  console.log(keyPair);
+  //@ts-ignore
   let privateKey = (await crypto.keys.import(keyPair.privateKey, ""))._key;
   delete privateKey.alg;
   delete privateKey.key_ops;

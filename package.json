@@ -1,6 +1,6 @@
 {
   "name": "arweave-mnemonic-keys",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "licence": "MIT",
   "author": {
     "name": "acolytec3"
@@ -8,7 +8,9 @@
   "main": "dist/index.js",
   "description": "Utilities for generating Arweave Keys without keyfiles",
   "keywords": [
-    "typescript", "arweave", "mnemonic"
+    "typescript",
+    "arweave",
+    "mnemonic"
   ],
   "scripts": {
     "benchmarks": "ts-node benchmarks",
@@ -70,7 +72,7 @@
     "typescript": "^4.1.3"
   },
   "dependencies": {
-    "human-crypto-keys": "^0.1.4",
+    "human-crypto-keys": "file://../js-human-crypto-keys",
     "libp2p-crypto": "^0.18.0"
   }
 }

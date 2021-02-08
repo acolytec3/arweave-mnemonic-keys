@@ -1,6 +1,5 @@
-## 0.0.3 (2020-12-21)
+## 0.0.4 (2021-02-07)
 
-- Fixed bug in structure of exported key that was causing issues when signing a transaction using the generated key
-- Added tests!
+- Fixed bug in underlying library where keys were being created as 2048 bit instead of 4096 bit keys
 
 
