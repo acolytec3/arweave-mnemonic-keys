@@ -1,5 +1,5 @@
-## 0.0.4 (2021-02-07)
+## 0.0.5 (2021-02-08)
 
-- Fixed bug in underlying library where keys were being created as 2048 bit instead of 4096 bit keys
+- Import correct dependency for js-human-crypto-keys
 
 

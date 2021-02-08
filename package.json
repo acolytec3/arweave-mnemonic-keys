@@ -1,6 +1,6 @@
 {
   "name": "arweave-mnemonic-keys",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "licence": "MIT",
   "author": {
     "name": "acolytec3"
@@ -72,7 +72,7 @@
     "typescript": "^4.1.3"
   },
   "dependencies": {
-    "human-crypto-keys": "file://../js-human-crypto-keys",
+    "human-crypto-keys": "https://github.com/acolytec3/js-human-crypto-keys.git",
     "libp2p-crypto": "^0.18.0"
   }
 }
