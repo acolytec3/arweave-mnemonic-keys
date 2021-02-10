@@ -17,11 +17,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "experimentalDecorators": true,
-    "allowJs": true
   },
   "exclude": [
     "dist",
     "node_modules",
-    "src/crypto-keys"
   ]
 }

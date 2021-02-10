@@ -1,5 +1,5 @@
-## 0.0.7 (2021-02-10)
+## 0.0.9 (2021-02-10)
 
-- Update deps
+- Stop logging my private keys to the console!!!
 
 
