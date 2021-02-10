@@ -1,3 +1,4 @@
+//@ts-ignore
 import { generateKeyPair, getKeyPairFromMnemonic } from "human-crypto-keys";
 import crypto from "libp2p-crypto";
 
@@ -7,7 +8,6 @@ import crypto from "libp2p-crypto";
  */
 export async function generateMnemonic() {
   let keys = await generateKeyPair(
-    "rsa",
     { id: "rsa", modulusLength: 4096 },
     { privateKeyFormat: "pkcs1-pem" }
   );
@@ -30,7 +30,6 @@ export async function generateMnemonic() {
 export async function getKeyFromMnemonic(mnemonic: string) {
   let keyPair = await getKeyPairFromMnemonic(
     mnemonic,
-    "rsa",
     { id: "rsa", modulusLength: 4096 },
     { privateKeyFormat: "pkcs1-pem" }
   );

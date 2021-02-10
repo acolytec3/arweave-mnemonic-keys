@@ -1,5 +1,5 @@
-## 0.0.5 (2021-02-08)
+## 0.0.7 (2021-02-10)
 
-- Import correct dependency for js-human-crypto-keys
+- Update deps
 
 
